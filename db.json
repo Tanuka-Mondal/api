@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Tanuka Mondal",
+      "username": "tanu",
+      "email": "example1@mail.com"
+    },
+    {
+      "id": 2,
+      "name": "Upaneeta Chakraborty",
+      "username": "upa",
+      "email": "example2@mail.com"
+    },
+    {
+      "id": 3,
+      "name": "Ankita Hazra",
+      "username": "anki",
+      "email": "example3@mail.com"
+    }
+]

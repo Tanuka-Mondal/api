@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container pt-4">
+        <h2 class="text-center">INVOICE</h2>
+         <!-- Table for the upper part -->
+         <table class="table table-bordered">
+            <tbody>
+                <!-- First Row -->
+                <tr>
+                    <th scope="row">Customer:</th>
+                    <td><input type="text" id="customer" class="form-control" placeholder="Enter customer name"></td>
+                    <th scope="row">Invoice No.:</th>
+                    <td><input type="text" id="invoiceNo" class="form-control" placeholder="Enter invoice number"></td>
+                </tr>
+
+                <!-- Second Row -->
+                <tr>
+                    <th scope="row">Address:</th>
+                    <td><input type="text" id="address" class="form-control" placeholder="Enter address"></td>
+                    <th scope="row">Date:</th>
+                    <td><input type="text" id="date" class="form-control" placeholder="Enter date"></td>
+                </tr>
+
+                <!-- Third Row -->
+                <tr>
+                    <th scope="row">City:</th>
+                    <td><input type="text" id="city" class="form-control" placeholder="Enter city"></td>
+                    <th scope="row">GST%:</th>
+                    <td><input type="text" class="form-control" id="gst-field" placeholder="Enter GST percentage"></td>
+                </tr>
+            </tbody>
+        </table>     
+
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" id="no-h">No.</th>
+                        <th scope="col" id="item-h">Item</th>
+                        <th scope="col" id="qty-h">Qty</th>
+                        <th scope="col" id="rate-h">Rate</th>
+                        <th scope="col" id="amt-h">Amt</th>
+                        <th scope="col" id="btn-h"><button type="button" class="btn btn-success" id="addBtn">+</button></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Additional sections below the table -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="action-buttons">
+                    <button type="button" class="btn btn-primary" id="bt-submit">Submit</button>
+                    <button type="button" class="btn btn-primary">Print</button>
+                    <button type="button" class="btn btn-primary">Show All Data</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="vertical-fields">
+                    <div class="d-flex">
+                        <label>Total:</label>
+                        <input type="text" class="form-control total-field" readonly>
+                    </div>
+
+                    <div class="d-flex">
+                        <label>GST:</label>
+                        <input type="text" class="form-control gst-field" readonly>
+                    </div>
+
+                    <div class="d-flex">
+                        <label>Net Amt:</label>
+                        <input type="text" class="form-control net-amt-field" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <button class="btn btn-md btn-primary"
+	id="addBtn" type="button"> 
+		Add new Row 
+	</button>  -->
+    </div>
+
+     <!-- Bootstrap JS and Popper.js (required for certain Bootstrap components) -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Your custom JavaScript file -->
+     <script src="script.js"></script>
+</body>
+
+</html>

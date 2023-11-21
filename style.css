@@ -1,0 +1,36 @@
+/* Add some spacing between upper and lower parts */
+h4 {
+    margin-top: 30px;
+}
+
+/* Style the "Add" button */
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 0;
+}
+
+.table-bordered {
+    border: 0 #dbd5d5 !important;
+}
+
+#no-h, #btn-h{
+    width:50px;
+}
+
+.vertical-fields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.vertical-fields label {
+    margin-right: 10px;
+    width: 80px;
+}
+
+.vertical-fields input {
+    flex: 1; /* Take up remaining space */
+    margin-bottom: 10px;
+}
+
